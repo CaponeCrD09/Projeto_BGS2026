@@ -18,9 +18,9 @@ public class Disparo : MonoBehaviour
         
     }
 
-    public void OnCollisionEnter(Collision collision)
+    public void OnTriggerEnter(Collider other)
     {
-        if(collision.gameObject.tag == "Cenario")
+        if(other    .gameObject.tag == "Cenario")
         {
             canTp = true;
             StartCoroutine(DestroyAfterSeconds(0.2f));

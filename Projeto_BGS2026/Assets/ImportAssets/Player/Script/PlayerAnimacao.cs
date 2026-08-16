@@ -4,10 +4,12 @@ public class PlayerAnimacao : MonoBehaviour
 {
     public Animator anim;
     public int transition;
+    public Rigidbody rig;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         anim = GetComponent<Animator>();
+        rig = GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
@@ -24,10 +26,20 @@ public class PlayerAnimacao : MonoBehaviour
             transition = 0; // Idle
             anim.SetInteger("transition", transition);
         }
-        else if (!this.GetComponent<PlayerJump>().isGrounded)
+        else if(rig.linearVelocity.y > 0.1f && !this.GetComponent<PlayerJump>().isGrounded)
         {
-            transition = 2; // Pulo
+            transition = 2; // Rolamento
             anim.SetInteger("transition", transition);
         }
+        else if (rig.linearVelocity.y < -0.1f && !this.GetComponent<PlayerJump>().isGrounded)
+        {
+            transition = 3; // Queda
+            anim.SetInteger("transition", transition);
+        }
+        //else if (!this.GetComponent<PlayerJump>().isGrounded)
+        //{
+        //    transition = 2; // Pulo
+        //    anim.SetInteger("transition", transition);
+        //}
     }
 }
