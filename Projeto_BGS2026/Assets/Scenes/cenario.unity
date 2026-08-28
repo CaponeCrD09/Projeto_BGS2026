@@ -256,7 +256,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: d6606e882360bc046906afd8eb16691b, type: 3}
       propertyPath: m_Name
-      value: Warrior Idle(1)
+      value: PlayerNovo
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d6606e882360bc046906afd8eb16691b, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d6606e882360bc046906afd8eb16691b, type: 3}
+      propertyPath: m_TagString
+      value: Player
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -265,6 +273,24 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: d6606e882360bc046906afd8eb16691b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2132113117}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: d6606e882360bc046906afd8eb16691b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2132113124}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: d6606e882360bc046906afd8eb16691b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2132113123}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: d6606e882360bc046906afd8eb16691b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2132113122}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: d6606e882360bc046906afd8eb16691b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2132113121}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: d6606e882360bc046906afd8eb16691b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2132113120}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: d6606e882360bc046906afd8eb16691b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2132113119}
     - targetCorrespondingSourceObject: {fileID: -440136801301717049, guid: d6606e882360bc046906afd8eb16691b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1294840821}
@@ -753,7 +779,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2c49d96524265541bf43d3e654fe81f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerAnimacao
-  anim: {fileID: 0}
+  anim: {fileID: 1804378728}
   transition: 0
   rig: {fileID: 0}
 --- !u!54 &1804378724
@@ -811,6 +837,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: f7fcb1cb3098f284da95df9f8b258b3b, type: 3}
   m_PrefabInstance: {fileID: 366808233}
   m_PrefabAsset: {fileID: 0}
+--- !u!95 &1804378728 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5866666021909216657, guid: f7fcb1cb3098f284da95df9f8b258b3b, type: 3}
+  m_PrefabInstance: {fileID: 366808233}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2132113115 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: d6606e882360bc046906afd8eb16691b, type: 3}
@@ -826,7 +857,7 @@ Animator:
   m_GameObject: {fileID: 2132113115}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: a985d7cb072cf864181787ab81eadc7c, type: 2}
+  m_Controller: {fileID: 9100000, guid: c42649c8784105c40b696c851ea4bfdb, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -838,6 +869,122 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!54 &2132113119
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2132113115}
+  serializedVersion: 5
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!136 &2132113120
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2132113115}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.10448897
+  m_Height: 0.9718902
+  m_Direction: 1
+  m_Center: {x: 0.00000011920929, y: 0.48242366, z: 0}
+--- !u!114 &2132113121
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2132113115}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d074a2b3857efc4fbf096321fd14630, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerTP
+  tpob: {fileID: 0}
+--- !u!114 &2132113122
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2132113115}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2193b128ff674548bb3914b2aa8cec5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerMove
+  speed: 0
+  rotationSpeed: 10
+  h: 0
+  v: 0
+  rig: {fileID: 0}
+  mover: {x: 0, y: 0, z: 0}
+  cameraTransform: {fileID: 0}
+--- !u!114 &2132113123
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2132113115}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 367c7d03f28e29f4fabb64b5ca86c058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerJump
+  jumpForce: 5
+  checkRadius: 0.2
+  groundCheck: {fileID: 0}
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  isGrounded: 0
+--- !u!114 &2132113124
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2132113115}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2c49d96524265541bf43d3e654fe81f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerAnimacao
+  anim: {fileID: 0}
+  transition: 0
+  rig: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
