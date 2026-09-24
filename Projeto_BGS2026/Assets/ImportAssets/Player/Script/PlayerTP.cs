@@ -3,6 +3,7 @@ using UnityEngine;
 public class PlayerTP : MonoBehaviour
 {
 
+    public float speed;
     public GameObject tpob;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -20,7 +21,8 @@ public class PlayerTP : MonoBehaviour
             // Perform teleportation logic
             if(tpob.GetComponent<Disparo>().canTp)
             {
-                transform.position = tpob.transform.position;
+                //transform.position = tpob.transform.position;
+                transform.position = Vector3.Lerp(transform.position, tpob.transform.position, speed * Time.deltaTime);
             }
         }
     }
