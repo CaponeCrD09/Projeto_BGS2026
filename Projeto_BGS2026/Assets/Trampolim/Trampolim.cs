@@ -11,6 +11,6 @@ public class Trampolim : MonoBehaviour
         if(rig != null)
         {
             rig.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
-        }
+         }
     }
 }
