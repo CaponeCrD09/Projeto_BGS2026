@@ -61,6 +61,10 @@ sysinfo.txt
 *.unitypackage
 *.app
 
+# Game Build output folder (binary/generated files - should not be tracked)
+[Gg]ame_[Bb]uild/
+[Gg]ame_[Bb]uilds/
+
 # Crashlytics generated file
 crashlytics-build.properties
 
